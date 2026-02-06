@@ -1,0 +1,76 @@
+Static Webpage Project
+
+This project is a static front-end website built using HTML, CSS, and Tailwind CSS. It includes a product landing page and a login form with validation.
+
+Technologies Used
+HTML5 – Structure of the website
+CSS3 – Styling for the landing page
+Tailwind CSS – Utility-first styling for the login page and responsiveness
+
+Pages
+index.html – Main product landing page
+login.html – Login page with validation
+styles.css – Custom CSS for the landing page
+
+Login Form Validation
+Form validation is implemented using Regular Expressions (Regex).
+Email / Phone Validation
+The user must enter either:
+A valid email address
+OR
+A 10-digit phone number
+Password Validation
+The password must:
+Be at least 8 characters long
+Contain at least one uppercase letter
+Contain at least one lowercase letter
+Contain at least one number
+
+Use of Technologies
+HTML
+Semantic tags like
+<header>, <footer>, and <section>
+are used for better structure, navigation, and SEO.
+
+CSS
+Flexbox is used for layout alignment and positioning on the landing page.
+
+Tailwind CSS
+Used on the login page for fast styling and responsive design.
+
+Regexes
+used for form validation in the login page
+
+some Regular experssion list
+\	// the escape character - used to find an instance of a metacharacter like a period, brackets, etc.
+.	// match any character except newline
+x	// match any instance of x
+^x	// match any character except x
+[x]	// match any instance of x in the bracketed range - [abxyz] will match any instance of a, b, x, y, or z
+|	// an OR operator - [x|y] will match an instance of x or y
+()	// used to group sequences of characters or matches
+{}	// used to define numeric quantifiers
+{x}	// match must occur exactly x times
+{x,}	// match must occur at least x times
+{x,y}	// match must occur at least x times, but no more than y times
+?	// preceding match is optional or one only, same as {0,1}
+*	// find 0 or more of preceding match, same as {0,}
++	// find 1 or more of preceding match, same as {1,}
+^	// match the beginning of the line
+$	// match the end of a line
+\d	// matches a digit, same as [0-9]
+\D	// matches a non-digit, same as [^0-9]
+\s	// matches a whitespace character (space, tab, newline, etc.)
+\S	// matches a non-whitespace character
+\w	// matches a word character
+\W	// matches a non-word character
+\b	// matches a word-boundary (NOTE: within a class, matches a backspace)
+\B	// matches a non-wordboundary
+[:alpha:]	// Represents an alphabetic character. Use [:alpha:]+ to find one of them.
+[:digit:]	// Represents a decimal digit. Use [:digit:]+ to find one of them.
+[:alnum:]	// Represents an alphanumeric character ([:alpha:] and [:digit:]).
+[:space:]	// Represents a space character (but not other whitespace characters).
+[:print:]	// Represents a printable character.
+[:cntrl:]	// Represents a nonprinting character.
+[:lower:]	// Represents a lowercase character if Match case is selected in Options.
+[:upper:]	// Represents an uppercase character if Match case is selected in Options.

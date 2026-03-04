@@ -26,3 +26,26 @@
   font-size: 22px;
   color: green;
 }
+
+.add-btn {
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #ff6b00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(255, 107, 0, 0.3);
+}
+
+.add-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

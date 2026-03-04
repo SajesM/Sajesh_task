@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
 import "./styles.css";
-import Header from "../../../shared/layout/Header";
-import Footer from "../../../shared/layout/Footer";
 
 function ProductDetails() {
   const { id } = useParams();
+  const { addToCart } = useContext(CartContext);
+
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -17,15 +18,16 @@ function ProductDetails() {
   if (!product) return <p>Loading...</p>;
 
   return (
-    <div>
     <div className="product-details">
       <img src={product.thumbnail} alt={product.title} />
       <div className="product-info">
-      <h1>{product.title}</h1>
-      <p>{product.description}</p>
-      <p className="price">Price: ${product.price}</p>
+        <h1>{product.title}</h1>
+        <p>{product.description}</p>
+        <p className="price">Price: ${product.price}</p>
+        <button className="add-btn" onClick={() => addToCart(product)}>
+          Add To Cart
+        </button>
       </div>
-    </div>
     </div>
   );
 }

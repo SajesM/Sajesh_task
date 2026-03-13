@@ -1,5 +1,5 @@
-# Task add remove
-A simple **Task** built using **Node.js and
+# Task 
+A simple app using **Node.js and
 Express.js**. This project demonstrates how to build a basic backend API
 that performs **CRUD operations (Create, Read, Update, Delete)** using a
 **mongodb**.
